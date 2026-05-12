@@ -15,6 +15,7 @@
     </div>
     <nav class="nav" aria-label="Navegacao principal">
       <a href="index.html">Sobre</a>
+      <a href="#colabore">Colabore</a>
       <a href="privacy.html">Politica de Privacidade</a>
     </nav>
   </header>
@@ -58,6 +59,34 @@
       </p>
     </section>
 
+    <section class="content" id="colabore">
+      <h2>Colabore com o projeto</h2>
+      <p>
+        O Despensa Inteligente e um projeto em evolucao. Voce pode ajudar enviando sugestoes,
+        reportando problemas, compartilhando o app com outras pessoas ou contribuindo para manter
+        melhorias, infraestrutura e novas funcionalidades.
+      </p>
+      <div class="collab-grid">
+        <article>
+          <h3>Envie ideias</h3>
+          <p>Conte o que facilitaria sua rotina na cozinha e quais recursos voce gostaria de ver no app.</p>
+        </article>
+        <article>
+          <h3>Divulgue</h3>
+          <p>Compartilhe o Despensa Inteligente com amigos, familiares e pessoas que querem reduzir desperdicio.</p>
+        </article>
+        <article>
+          <h3>Apoie</h3>
+          <p>Contribuicoes ajudam a manter o app ativo e melhorar a experiencia dos usuarios.</p>
+        </article>
+      </div>
+      <div class="pix-box">
+        <span>Chave PIX</span>
+        <strong id="pix-key">34cf1c4c-e223-41a5-8bd8-f0f2199792b2</strong>
+        <button type="button" onclick="copyPixKey()">Copiar chave PIX</button>
+      </div>
+    </section>
+
     <section class="content">
       <h2>Contato</h2>
       <p>
@@ -76,6 +105,11 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    function copyPixKey() {
+      const pixKey = document.getElementById("pix-key").textContent;
+      navigator.clipboard.writeText(pixKey);
+    }
   </script>
 </body>
 </html>
