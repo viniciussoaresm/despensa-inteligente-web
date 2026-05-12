@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Despensa Inteligente</title>
+  <meta name="description" content="Organize sua despensa, acompanhe vencimentos e planeje compras com praticidade." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container topbar">
+    <div class="brand">
+      <span class="brand-mark">DI</span>
+      <span>Despensa Inteligente</span>
+    </div>
+    <nav class="nav" aria-label="Navegacao principal">
+      <a href="index.html">Sobre</a>
+      <a href="privacy.html">Politica de Privacidade</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <span class="badge">Organizacao domestica inteligente</span>
+      <h1>Controle sua despensa com mais clareza.</h1>
+      <p>
+        O Despensa Inteligente ajuda voce a organizar mantimentos, acompanhar produtos proximos ao vencimento,
+        reduzir desperdicio e planejar compras sem misturar lista de mercado com itens ja cadastrados no estoque.
+      </p>
+      <a class="cta" href="privacy.html">Ver politica de privacidade</a>
+    </section>
+
+    <section class="grid" aria-label="Recursos principais">
+      <article class="card">
+        <h3>Controle de validade</h3>
+        <p>Acompanhe itens proximos ao vencimento e tome decisoes antes de perder alimentos.</p>
+      </article>
+      <article class="card">
+        <h3>Despensa organizada</h3>
+        <p>Cadastre alimentos, quantidades, local de armazenamento e historico de consumo.</p>
+      </article>
+      <article class="card">
+        <h3>Lista de compras separada</h3>
+        <p>Planeje compras em uma area propria, sem alterar automaticamente os itens da despensa.</p>
+      </article>
+    </section>
+
+    <section class="content">
+      <h2>Sobre o app</h2>
+      <p>
+        A Despensa Inteligente nasce para ajudar pessoas e familias a terem mais controle dos alimentos,
+        economizar dinheiro e diminuir o desperdicio. Nossa missao e transformar a organizacao domestica
+        em algo simples, moderno e acessivel.
+      </p>
+      <p>
+        O app usa acesso por codigo enviado por e-mail e permite que cada usuario gerencie seus proprios
+        dados de despensa, lista de compras, vencimentos, itens consumidos e descartados.
+      </p>
+    </section>
+
+    <section class="content">
+      <h2>Contato</h2>
+      <p>
+        Para suporte, duvidas sobre privacidade ou solicitacao de exclusao de dados, entre em contato pelo e-mail:
+        <strong>despensainteligenteapp@gmail.com</strong>.
+      </p>
+      <p class="notice">
+        Use este mesmo e-mail como contato de suporte cadastrado na Google Play.
+      </p>
+    </section>
+  </main>
+
+  <footer class="container">
+    <span id="year"></span> Despensa Inteligente. Todos os direitos reservados.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
